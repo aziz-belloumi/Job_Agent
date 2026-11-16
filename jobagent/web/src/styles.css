@@ -1,0 +1,119 @@
+:root {
+  --bg-primary: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hover: #24344d;
+  --border-color: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.app-container { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.75rem 1.5rem; background: var(--bg-card); border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap; gap: 0.75rem;
+}
+.brand { display: flex; align-items: center; gap: 1rem; }
+.brand h1 { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+.nav-links { display: flex; gap: 0.5rem; }
+.nav-btn {
+  background: transparent; border: 1px solid transparent; color: var(--text-muted);
+  padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem;
+}
+.nav-btn:hover { color: var(--text-main); background: rgba(255,255,255,0.05); }
+.nav-btn.active { color: var(--text-main); background: var(--border-color); font-weight: 600; }
+
+.topbar-actions { display: flex; align-items: center; gap: 0.75rem; }
+.health-pill {
+  display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem;
+  padding: 0.25rem 0.6rem; border-radius: 9999px; background: rgba(0,0,0,0.2);
+}
+.health-dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-green { background-color: var(--success); }
+.dot-red { background-color: var(--danger); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500;
+  cursor: pointer; border: 1px solid transparent; transition: all 0.15s ease;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #020617; }
+.btn-primary:hover:not(:disabled) { background: var(--accent-hover); }
+.btn-secondary { background: var(--bg-card); border-color: var(--border-color); color: var(--text-main); }
+.btn-secondary:hover:not(:disabled) { background: var(--border-color); }
+.btn-success { background: var(--success); color: #020617; }
+.btn-warning { background: var(--warning); color: #020617; }
+
+.error-banner {
+  background: rgba(239, 68, 68, 0.2); border-bottom: 1px solid var(--danger); color: #fca5a5;
+  padding: 0.6rem 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem;
+}
+.close-btn { background: none; border: none; color: inherit; cursor: pointer; font-size: 1.1rem; }
+
+.main-content { flex: 1; padding: 1.5rem; max-width: 1280px; margin: 0 auto; width: 100%; }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
+.filter-pills { display: flex; gap: 0.5rem; }
+.pill {
+  background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted);
+  padding: 0.3rem 0.75rem; border-radius: 9999px; font-size: 0.8rem; cursor: pointer;
+}
+.pill.active { background: var(--accent); color: #020617; font-weight: 600; border-color: var(--accent); }
+
+.data-table-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
+.data-table th, .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+.data-table th { background: rgba(0,0,0,0.2); color: var(--text-muted); font-weight: 600; cursor: pointer; user-select: none; }
+.data-table th:hover { color: var(--text-main); }
+.data-table tr.clickable { cursor: pointer; transition: background 0.15s ease; }
+.data-table tr.clickable:hover { background: var(--bg-card-hover); }
+
+.verdict-badge {
+  display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;
+}
+.badge-high { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+.badge-worth { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+.badge-unsuitable { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+
+.detail-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; }
+.score-badge { font-size: 1.5rem; font-weight: 700; color: var(--accent); background: rgba(56, 189, 248, 0.1); padding: 0.4rem 0.8rem; border-radius: 8px; }
+
+.two-col-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+.panel-box { background: rgba(0,0,0,0.15); border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; }
+.panel-box h3 { font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--text-muted); }
+.panel-box ul { padding-left: 1.2rem; font-size: 0.85rem; line-height: 1.5; }
+
+.textarea-letter {
+  width: 100%; min-height: 180px; background: rgba(0,0,0,0.25); border: 1px solid var(--border-color);
+  border-radius: 6px; color: var(--text-main); padding: 0.75rem; font-family: monospace; font-size: 0.85rem;
+  resize: vertical; margin-bottom: 0.5rem;
+}
+.char-counter { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem; text-align: right; }
+.action-row { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+
+.spinner {
+  display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%; border-top-color: currentColor; animation: spin 0.8s ease-in-out infinite; margin-right: 0.4rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .two-col-grid { grid-template-columns: 1fr; }
+  .col-collapse { display: none; }
+  .topbar { flex-direction: column; align-items: stretch; }
+}

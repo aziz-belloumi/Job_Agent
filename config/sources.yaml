@@ -1,0 +1,14 @@
+# Job sources configuration
+remotive:
+  enabled: true
+  api_url: "https://remotive.com/api/remote-jobs"
+  # IMPORTANT: Remotive API terms limit to ~4 requests/day and 2/minute.
+  # Keep keywords to at most 3 to stay within limits.
+  keywords:
+    - "python"
+    - "machine learning"
+  limit_per_keyword: 50
+
+# Future sources (disabled for now)
+arbeitnow:
+  enabled: false

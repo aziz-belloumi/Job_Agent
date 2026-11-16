@@ -1,0 +1,15 @@
+# Single CV used for all applications (Phase 5 scope: one CV only).
+cv_path: "~/cv/cv.pdf"
+
+# Cover letter generation settings
+cover_letter:
+  model: "qwen2.5:3b-instruct-q4_K_M"
+  ollama_url: "http://127.0.0.1:11434"
+  max_words: 220
+  temperature: 0.4
+  # Only generate when these phrases appear (case-insensitive) in the job description
+  required_phrases:
+    - "cover letter"
+    - "coverletter"
+    - "lettre de motivation"
+    - "motivation letter"

@@ -1,0 +1,163 @@
+identity:
+  name: "Mohamed Aziz Belloumi"
+  location: "Sousse, Tunisia"
+  email: "belloumiaziz1@gmail.com"
+  links:
+    linkedin: "https://www.linkedin.com/in/mohamed-aziz-belloumi-a83807325/"
+    github: "https://github.com/aziz-belloumi"
+
+education:
+  - degree: "Engineering Degree, AI Specialization"
+    institution: "ENISo, Sousse"
+    years: "2023-2026"
+    specialization: "Artificial Intelligence"
+  - degree: "Preparatory Cycle"
+    institution: "IPEIM, Monastir"
+    years: "2020-2023"
+    specialization: "Technical Baccalaureate"
+
+experience:
+  - title: "AI/NLP Engineer Intern (PFE)"
+    company: "Innova Tunisia"
+    period: "Feb 2026 - Sep 2026"
+    type: "internship"
+    skills_used: ["Python", "PyTorch", "HuggingFace", "NLP", "Transformers", "MySQL", "GPU optimization"]
+  - title: "Full-Stack Developer Intern"
+    company: "Wimbee"
+    period: "Jul 2025 - Aug 2025"
+    type: "internship"
+    skills_used: ["Angular", "ASP.NET Core", "SQL Server", "REST APIs", "Entity Framework"]
+  - title: "Mobile & Backend Developer Intern"
+    company: "ConvergeINNOV"
+    period: "Jun 2024 - Sep 2024"
+    type: "internship"
+    skills_used: ["Flutter", "Node.js", "MongoDB", "REST APIs"]
+
+skills:
+  strong:
+    - "Python"
+    - "PyTorch"
+    - "HuggingFace"
+    - "scikit-learn"
+    - "NLP"
+    - "Transformers"
+    - "FastAPI"
+    - "Flask"
+    - "Docker"
+    - "SQL"
+    - "MySQL"
+    - "PostgreSQL"
+    - "MongoDB"
+    - "Angular"
+    - "ASP.NET Core"
+    - "Node.js"
+    - "Flutter"
+    - "Git"
+    - "Linux"
+    - "Pandas"
+    - "NumPy"
+    - "REST APIs"
+    - "RAG"
+    - "Ollama"
+  familiar:
+    - "TensorFlow"
+    - "XGBoost"
+    - "Prophet"
+    - "SARIMA"
+    - "ChromaDB"
+    - "YOLO"
+    - "Java"
+    - "C++"
+    - "C#"
+    - "TypeScript"
+    - "React"
+    - "React Native"
+    - "Firebase"
+    - "Postman"
+    - "Swagger"
+    - "JWT"
+    - "SQL Server"
+    - "spaCy"
+    - "fastText"
+  learning:
+    - "LangChain"
+    - "Kubernetes"
+    - "Rust"
+
+skill_weights:
+  universal: ["Git", "Linux", "SQL", "REST APIs", "Docker", "Pandas", "NumPy"]
+
+languages:
+  arabic: "native"
+  english: "advanced"
+  french: "intermediate"
+  german: "none"
+
+eligibility:
+  citizenship: "Tunisia"
+  work_authorization:
+    - "Tunisia"
+    - "Remote-international"
+  willing_to_relocate: false
+  eu_visa_route: false
+
+target_roles:
+  primary:
+    - "Machine Learning Engineer"
+    - "ML Engineer"
+    - "NLP Engineer"
+    - "AI Engineer"
+    - "Data Scientist"
+    - "Python Developer"
+    - "Python Backend Developer"
+  secondary:
+    - "Software Engineer"
+    - "Full-Stack Developer"
+    - "Backend Developer"
+    - "Graduate Engineer"
+
+role_quality:
+  downweight_titles:
+    - "AI Trainer"
+    - "AI Coding Tasks"
+    - "Data Annotator"
+    - "Annotation"
+    - "RLHF"
+    - "AI Tutor"
+    - "Content Writer"
+    - "Data Labeling"
+
+seniority:
+  accept:
+    - "junior"
+    - "entry"
+    - "graduate"
+    - "internship"
+  reject:
+    - "senior"
+    - "lead"
+    - "principal"
+    - "staff"
+    - "head"
+    - "director"
+    - "manager"
+
+locations:
+  priority:
+    - "Tunisia"
+    - "Remote (EU timezone)"
+    - "Remote (worldwide)"
+    - "Europe"
+  reject_if:
+    - "on-site outside Tunisia without visa"
+
+deal_breakers:
+  - "sales"
+  - "commission-only"
+  - "unpaid"
+  - "requires 3+ years experience"
+  - "requires 5+ years experience"
+
+recency:
+  prefer_days: 14
+  acceptable_days: 45
